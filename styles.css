@@ -1,99 +1,201 @@
+/* 通用設定 */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background: url('Image/background.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 標題區域 */
 header {
-    background: #333;
+    background-color: #333;
     color: #fff;
     padding: 1rem 0;
+    border-radius: 10px;
 }
 
 header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 1rem;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 10px;
 }
 
 header h1 {
     margin: 0;
+    text-align: center;
+    font-size: 2rem;
 }
 
-header nav ul {
+nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
-header nav ul li {
+nav ul li {
     margin: 0 1rem;
 }
 
-header nav ul li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 .language-switcher {
-    display: flex;
-    gap: 10px;
-}
-
-.language-switcher .btn {
-    background: #fff;
-    color: #333;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border: 1px solid #333;
-    border-radius: 5px;
-}
-
-.language-switcher .btn:hover {
-    background: #333;
-    color: #fff;
-}
-
-.hero {
-    background: #f4f4f4;
-    color: #333;
-    padding: 2rem 0;
     text-align: center;
-}
-
-.hero .btn {
-    display: inline-block;
-    background: #333;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
     margin-top: 1rem;
 }
 
-.features {
-    background: #fff;
-    color: #333;
+.language-switcher .btn {
+    color: #fff;
+    background-color: #555;
+    border: none;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+}
+
+.language-switcher .btn:hover {
+    background-color: #777;
+}
+
+/* Hero 區域 */
+.hero {
+    text-align: center;
     padding: 2rem 0;
+    border-radius: 10px;
 }
 
-.features .container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 1rem;
-}
-
-.features .feature-item {
+.hero h2 {
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+    color: #fff;
+    background-color: #007BFF;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.hero .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Features 區域 */
+.features {
+    padding: 2rem 0;
+    border-radius: 10px;
+}
+
+.features h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.feature-item {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.feature-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Products 區域 */
+.products {
+    padding: 2rem 0;
+    border-radius: 10px;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.product-item img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-description {
+    flex: 1;
+    padding: 1rem;
+}
+
+.product-description h4 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-description p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.product-description.left {
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.product-description.right {
+    text-align: right;
+    padding-right: 2rem;
+}
+
+/* Footer 區域 */
 footer {
-    background: #333;
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+    border-radius: 10px;
+}
+
+footer .container {
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
 }
