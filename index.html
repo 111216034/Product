@@ -4,57 +4,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>VBA Compiler for Excel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #0056b3;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 10px;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .navbar a:hover {
+            background-color: #004494;
+            border-radius: 5px;
+        }
+
+        .navbar-item {
+            position: relative;
+        }
+
+        .navbar-item > a::after {
+            content: '\25BC'; /* Unicode for down arrow */
+            font-size: 0.7em;
+            margin-left: 5px;
+        }
+
+        /* 防止 ::after 被應用到 .dropdown 的 a 元素 */
+        .dropdown a::after {
+            content: none;
+        }
+
+
+        .dropdown {
+            position: absolute;
+            display: none;
+            background-color: #004494;
+            border-radius: 5px;
+            margin-top: 5px;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 10px 15px;
+            color: #fff;
+        }
+
+        .dropdown a:hover {
+            background-color: #003377;
+        }
+
+        .navbar-item:hover .dropdown {
+            display: block;
+        }
+
+        .content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 60%;
+            /* Leaves 1/5 of the width on the left and 1/3 on the right */
+        }
+
+        h1,
+        h2 {
+            color: #0056b3;
+        }
+
+        img {
+            max-width: 80%;
+            /* Adjust image size to be smaller */
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            /* Center the images */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #004494;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1>Your Website Title</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <!-- 語言切換按鈕 -->
-            <div class="language-switcher">
-                <a href="index.html" class="btn">English</a>
-                <a href="index_zh.html" class="btn">中文</a>
+    <div class="navbar">
+        <div class="navbar-item">
+            <a href="#">VBA Compiler</a>
+            <div class="dropdown">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+                <a href="#">Option 4</a>
+                <a href="#">Option 5</a>
+                <a href="#">Option 6</a>
+                <a href="#">Option 7</a>
+                <a href="#">Option 8</a>
             </div>
         </div>
-    </header>
-
-    <section class="hero">
-        <div class="container">
-            <h2>Welcome to Your Website</h2>
-            <p>This is your placeholder text. You can replace this with your content.</p>
-            <a href="#" class="btn">Get Started</a>
-        </div>
-    </section>
-
-    <section class="features">
-        <div class="container">
-            <h3>Key Features</h3>
-            <div class="feature-item">
-                <h4>Feature 1</h4>
-                <p>Describe your first feature here.</p>
-            </div>
-            <div class="feature-item">
-                <h4>Feature 2</h4>
-                <p>Describe your second feature here.</p>
+        <div class="navbar-item">
+            <a href="#">VBA Speed Up</a>
+            <div class="dropdown">
+                <a href="#">Speed Option 1</a>
+                <a href="#">Speed Option 2</a>
             </div>
         </div>
-    </section>
+        <a href="#">Best way to protect VBA code</a>
+        <a href="#">Frequent Questions</a>
+        <a href="#">Download</a>
+        <a href="#">Order</a>
+        <a href="#">Contact us</a>
+    </div>
+    <div class="content">
+        <h1>VBA Code Protection Software – VbaCompiler for Excel</h1>
+        <p>VBA Compiler for Excel is VBA code protection software which converts the VBA code of Microsoft Excel
+            workbooks and Excel add-ins into the binary code of a native Windows DLL file.</p>
+        <p>After compilation your VBA code cannot be copied or recovered and has the highest level of protection from
+            piracy.</p>
+        <p>VBA Compiler is the best alternative to the VBA code protection approaches, such as VBA code obfuscation or
+            standard MS Excel VBA password protection.</p>
+        <p>The compiled workbook or Excel add-in file is left with the original file extension and behaves the same way
+            as the original file.</p>
+        <a href="#" class="button">Download Free Trial</a>
+        <img src="Image\image1.jpg" alt="VbaCompiler for Excel - VBA code protection software">
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Your Company. All rights reserved.</p>
-        </div>
-    </footer>
+        <h2>Main benefits of the VBA Compiler usage</h2>
+        <ul>
+            <li>The strongest and impenetrable VBA code protection. It is impossible to recover VBA code from a Windows
+                DLL.</li>
+            <li>You can compile a workbook into a single result file with the same file extension as the original one,
+                which includes an embedded DLL within the compiled workbook.</li>
+            <li>VBA speed up. The performance of some VBA algorithms increases significantly after compilation.</li>
+            <li>It is impossible to find, trace or copy the VBA code after compilation because it has been compiled and
+                moved to the Windows DLL.</li>
+            <li>To use the VBA Compiler you do not need to have knowledge of any other programming languages except VBA
+                – Visual Basic for Application.</li>
+            <li>The original MS Excel workbook or add-in file extension is left the same as it was before compilation.
+            </li>
+            <li>VBA Compiler works with the copy of the original file, and keeps the original file unchanged.</li>
+            <li>VBA code conversion during compilation happens automatically, which means it doesn’t require any of your
+                participation in the process.</li>
+            <li>You do not need to select which VBA functions you need to compile – all of the VBA code methods
+                (procedures, functions and properties) will be compiled with one mouse click on the “Compile” button.
+            </li>
+            <li>Compile the VBA code with copy protection along with the activation/registration key. Such compiled VBA
+                code will not work without a registration/activation key, which only you will be able to produce.</li>
+            <li>Create trial/demo version of your VBA code. Your customers will be able to try your workbook or Excel
+                add-in without registration for a limited amount of days determined by you.</li>
+        </ul>
+
+        <h2>How the VBA Compiler works</h2>
+        <p>The DoneEx VbaCompiler transforms source VBA code into C-code and, in the final stage, the C-language code is
+            compiled into a native Windows DLL file.</p>
+
+        <p>During compilation, the transformation of the source VBA code goes through several stages:</p>
+        <ol>
+            <li><strong>Stage 1:</strong> VbaCompiler parses and analyses the source VBA code.</li>
+            <li><strong>Stage 2:</strong> The product generates object code based on results of stage 1.</li>
+            <li><strong>Stage 3:</strong> The product generates C-language code from the object code generated in stage
+                2.</li>
+            <li><strong>Stage 4:</strong> The VbaCompiler runs a C-compiler to compile the C-language code (which was
+                generated in Stage 3) into a Windows DLL.</li>
+            <li><strong>Stage 5:</strong> The final stage of compilation – the VbaCompiler removes compiled VBA code
+                from the file and generates connective VBA code where all compiled DLL functions are called instead of
+                original VBA code.</li>
+        </ol>
+
+        <img src="Image\image2.jpg" alt="Excerpt of the original VBA code before compilation">
+
+        <h2>The same VBA code after compilation with VBA Compiler</h2>
+        <img src="Image\image3.jpg" alt="Excerpt of VBA code after compilation with VBA Compiler">
+    </div>
 </body>
 
 </html>
